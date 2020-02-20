@@ -1,3 +1,3 @@
 <div class="container">
-    <h1>home/pages</h1>
+    <h1>Data/Index</h1>
 </div>
