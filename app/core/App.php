@@ -34,11 +34,11 @@ class App
             $this->params = array_values($url);
         }
 
-
+        //------------------------------------------------------------------------------------------
         //jalankan controller dan method, serta kirimkan method kalo ada
         call_user_func_array([$this->controller, $this->method], $this->params);
+        //-------------------------------------------------------------------------------------------
     }
-
     public function parseURL()
     {
         if (isset($_GET['url'])) {
