@@ -2,7 +2,7 @@
 
 class App
 {
-    protected $controller = 'home';
+    protected $controller = 'Home';
     protected $method = 'index';
     protected $params = [];
 
@@ -12,7 +12,7 @@ class App
 
         //untuk controller
         if (file_exists('../app/controllers/' . $url[0] . '.php')) {
-            $this->controller = $url[0];
+            $this->controller = ucfirst($url[0]);
         }
 
         require_once '../app/controllers/' . $this->controller . '.php';
